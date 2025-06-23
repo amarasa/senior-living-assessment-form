@@ -38,7 +38,7 @@ const questions: Question[] = [
   },
   {
     id: 'timeline',
-    text: 'What\'s your timeline for making a change?',
+    text: 'What&apos;s your timeline for making a change?',
     options: ['Immediately (within 30 days)', 'Within 2-3 months', 'Within 6 months', 'Just exploring options for the future']
   },
   {
@@ -198,9 +198,9 @@ export function CareAssessment() {
           
           <div className="bg-blue-50 rounded-lg p-6 mb-8">
             <p className="text-lg font-sans text-gray-700 leading-relaxed">
-              Not sure what kind of care your loved one needs? We're here to help. 
-              By answering a few quick questions, you'll receive personalized guidance 
-              from our team—whether you're planning ahead or seeking immediate support.
+              Not sure what kind of care your loved one needs? We&apos;re here to help. 
+              By answering a few quick questions, you&apos;ll receive personalized guidance 
+              from our team—whether you&apos;re planning ahead or seeking immediate support.
             </p>
           </div>
 
@@ -278,7 +278,6 @@ export function CareAssessment() {
         onNext={nextStep}
         onBack={prevStep}
         currentStep={currentStep}
-        totalSteps={TOTAL_STEPS}
         isLastStep={currentStep === 10}
         isMultipleChoice={currentQuestion.isMultipleChoice}
       />

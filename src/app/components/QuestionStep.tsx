@@ -7,7 +7,6 @@ interface QuestionStepProps {
   onNext: () => void
   onBack: () => void
   currentStep: number
-  totalSteps: number
   isLastStep?: boolean
   isMultipleChoice?: boolean
 }
@@ -19,21 +18,9 @@ export function QuestionStep({
   onNext,
   onBack,
   currentStep,
-  totalSteps,
   isLastStep,
   isMultipleChoice
 }: QuestionStepProps) {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    const hasAnswer = isMultipleChoice 
-      ? Array.isArray(selectedAnswer) && selectedAnswer.length > 0
-      : selectedAnswer !== ''
-    
-    if (hasAnswer) {
-      onNext()
-    }
-  }
-
   const handleSingleSelect = (value: string) => {
     onAnswerSelect(value)
   }
