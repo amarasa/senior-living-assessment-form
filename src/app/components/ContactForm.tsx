@@ -82,7 +82,7 @@ export function ContactForm({
 						onChange={(e) =>
 							handleInputChange("name", e.target.value)
 						}
-						className='w-full p-4 border-2 border-gray-200 rounded-lg focus:border-[#012169] focus:outline-none font-sans placeholder:text-[#23272a]'
+						className='w-full p-4 border-2 border-gray-200 rounded-lg focus:border-[#012169] focus:outline-none font-sans text-[#23272a] placeholder:text-[#6b7280]'
 						placeholder='Enter your full name'
 						required
 					/>
@@ -100,7 +100,7 @@ export function ContactForm({
 						id='phone'
 						value={contactInfo.phone}
 						onChange={handlePhoneChange}
-						className='w-full p-4 border-2 border-gray-200 rounded-lg focus:border-[#012169] focus:outline-none font-sans placeholder:text-[#23272a]'
+						className='w-full p-4 border-2 border-gray-200 rounded-lg focus:border-[#012169] focus:outline-none font-sans text-[#23272a] placeholder:text-[#6b7280]'
 						placeholder='(555) 123-4567'
 						maxLength={14}
 						required
@@ -121,7 +121,7 @@ export function ContactForm({
 						onChange={(e) =>
 							handleInputChange("email", e.target.value)
 						}
-						className='w-full p-4 border-2 border-gray-200 rounded-lg focus:border-[#012169] focus:outline-none font-sans placeholder:text-[#23272a]'
+						className='w-full p-4 border-2 border-gray-200 rounded-lg focus:border-[#012169] focus:outline-none font-sans text-[#23272a] placeholder:text-[#6b7280]'
 						placeholder='your.email@example.com'
 						required
 					/>
